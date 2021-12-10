@@ -10,7 +10,9 @@ phases:
       - rbenv install 2.6.0
       - rbenv global 2.6.0
       - gem install bundler:1.10.6
-      - apt install ruby-bundler
+      - apt install make
+      - apt install -y gcc
+      - chmod a+rwx Gemfile.lock
       - bundle install
 artifacts:
   files:

@@ -1,2 +1,2 @@
-cd /var/www/apps/
-bundler install
+#cd /var/www/apps/
+#bundler install

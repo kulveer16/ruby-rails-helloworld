@@ -13,7 +13,6 @@ phases:
       - apt install make
       - apt install -y gcc
       - chmod a+rwx Gemfile.lock
-      - bundle config disable_platform_warnings true
       - bundle
 artifacts:
   files:

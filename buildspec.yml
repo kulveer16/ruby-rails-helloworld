@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      ruby: 2.6
+      ruby: 2.7
       nodejs: 12
     commands:
       - apt update
-      - rbenv install 2.6.0
-      - rbenv global 2.6.0
+      - rbenv install 2.7.0
+      - rbenv global 2.7.0
       - gem install bundler:1.10.6
       - apt install make
       - apt install -y gcc

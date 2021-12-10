@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/apps/hello-world
+hooks:
+  BeforeInstall:
+    - location: scripts/AfterInstall.sh
+      runas: root
+  ApplicationStart:
+    - location: scripts/ApplicationStart.sh
+      runas: root

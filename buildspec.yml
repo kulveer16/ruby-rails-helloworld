@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      ruby: 2.6
+      nodejs: 12
+    commands:
+      - apt update
+      - rbenv install 2.6.0
+      - rbenv global 2.6.0
+      - gem install bundler
+      - bundle install --path ./bundle
+      - apt install nginx
+      - ufw allow 'Nginx HTTP'
+artifacts:
+  files:
+    - '**/*'
+  name: hello-world-build

@@ -10,9 +10,6 @@ phases:
       - rbenv install 2.6.0
       - rbenv global 2.6.0
       - gem install bundler
-      - bundle config disable_platform_warnings true
-      - bundle update mimemagic
-      - bundle install --path ./bundle
       - apt install -y nginx-full
       - ufw allow 'Nginx HTTP'
 artifacts:

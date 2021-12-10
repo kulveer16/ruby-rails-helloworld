@@ -1,2 +1,1 @@
-#cd /var/www/apps/
-#bundler install
+sudo rm -rf /var/www/apps/hello-world

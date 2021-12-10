@@ -10,8 +10,8 @@ phases:
       - rbenv install 2.6.0
       - rbenv global 2.6.0
       - gem install bundler
+      - apt  install -y ruby-bundler
       - bundle install
-      - apt install -y nginx-full
 artifacts:
   files:
     - '**/*'

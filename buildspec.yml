@@ -10,6 +10,7 @@ phases:
       - rbenv install 2.6.0
       - rbenv global 2.6.0
       - gem install bundler:1.10.6
+      - apt install ruby-bundler
       - bundle install
 artifacts:
   files:

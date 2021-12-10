@@ -11,7 +11,6 @@ phases:
       - rbenv global 2.6.0
       - gem install bundler:1.10.6
       - apt  install -y ruby-bundler
-      - bundle install
 artifacts:
   files:
     - '**/*'
